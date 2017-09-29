@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <VTI_Minify>
+            <version>1.0.0</version>
+        </VTI_Minify>
+    </modules>
+    <global>
+        <helpers>
+            <vti_minify>
+                <class>VTI_Minify_Helper</class>
+            </vti_minify>
+            <core>
+                <rewrite>
+                    <data>VTI_Minify_Helper_Core_Data</data>
+                </rewrite>
+            </core>
+        </helpers>
+        <blocks>
+            <page>
+                <rewrite>
+                    <html_head>VTI_Minify_Block_Page_Html_Head</html_head>
+                </rewrite>
+            </page>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <vti_minify module="vti_minify">
+                    <file>vti_minify.xml</file>
+                </vti_minify>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <dev>
+            <css>
+                <lessjs>1</lessjs>
+            </css>
+        </dev>
+    </default>
+</config>
