@@ -17,7 +17,7 @@
                 <group>less_js</group>
             </action>
             <action method="addJs" ifconfig="dev/css/lessjs">
-                <script>less/less.js</script>
+                <script>less/less.min.js</script>
                 <params/>
                 <group>less_js</group>
             </action>

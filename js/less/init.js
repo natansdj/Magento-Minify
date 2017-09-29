@@ -1,5 +1,5 @@
 less = {
-    env: "development", // or "production"
+    env: "production", // or "production"
     async: true,        // load imports async
     poll: 2000,         // when in watch mode, time in ms between polls
     dumpLineNumbers: "all" // or "mediaQuery" or "all"

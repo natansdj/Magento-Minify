@@ -154,6 +154,11 @@ class VTI_Minify_Block_Page_Html_Head extends Mage_Page_Block_Html_Head
             $lines['less_js'] = $lessJs;
         }
 
+        //move framework group if exists always to first.
+        if (isset($lines['framework'])) {
+            $lines = array('framework' => $lines['framework']) + $lines;
+        }
+
         // prepare HTML
         $shouldMergeJs = Mage::getStoreConfigFlag('dev/js/merge_files');
         $shouldMergeCss = Mage::getStoreConfigFlag('dev/css/merge_css_files');

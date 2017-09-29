@@ -35,8 +35,14 @@
     </frontend>
     <default>
         <dev>
+            <js>
+                <enable_minify_js>0</enable_minify_js>
+                <enable_yuicompressor>0</enable_yuicompressor>
+            </js>
             <css>
-                <lessjs>1</lessjs>
+                <enable_minify_css>0</enable_minify_css>
+                <lessjs>0</lessjs>
+                <lessjs_watch>0</lessjs_watch>
             </css>
         </dev>
     </default>
